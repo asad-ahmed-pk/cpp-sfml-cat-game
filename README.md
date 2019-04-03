@@ -19,4 +19,4 @@ No game engine was used. The only tool used was the [*SFML*](https://www.sfml-de
 
 **Note:** This project was developed at a time where I was not aware of build systems such as CMake. Hence, it is simply an XCode project with C++ source code. SFML 2.0 is required to build the game.
 
-**Why Cats? Becuase, why not?**
+**Why Cats? Because, why not?**

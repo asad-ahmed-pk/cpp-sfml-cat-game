@@ -1,0 +1,19 @@
+TODO:
+05/05/15
+
+[-] Collision Detection Improvements
+--> Decrease collision detection length between player and enemies.
+--> Fix issues with some collision blocks in the world not being detected.
+
+[-] Implement AI
+--> Automatic running around of enemies.
+--> Chase after player.
+--> Able to move away in other direction after collision.
+
+[-] Game Main Menu
+--> Implement state stack
+--> Implement pausing the game
+--> Implement basic main menu
+
+ISSUES:
+- Crash when player moves outside bounds (negative x, y) -> Due to the collisionMapData indexing at each frame.

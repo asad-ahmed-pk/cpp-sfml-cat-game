@@ -1,0 +1,6 @@
+Error Codes
+Author: Asad Ahmed
+
+-2: Fish texture not found
+-3: Font file not found
+-4: A sound file was not found

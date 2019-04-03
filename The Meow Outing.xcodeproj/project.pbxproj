@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C31893CB1B6E45F000248D20 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = C31893CA1B6E45F000248D20 /* ResourcePath.mm */; };
+		C31893FF1B6E475600248D20 /* AnimatableEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893DD1B6E475600248D20 /* AnimatableEntity.cpp */; };
+		C31894001B6E475600248D20 /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893DF1B6E475600248D20 /* CollisionDetector.cpp */; };
+		C31894011B6E475600248D20 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893E11B6E475600248D20 /* Entity.cpp */; };
+		C31894021B6E475600248D20 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893E31B6E475600248D20 /* Game.cpp */; };
+		C31894031B6E475600248D20 /* map_01.csv in Resources */ = {isa = PBXBuildFile; fileRef = C31893E91B6E475600248D20 /* map_01.csv */; };
+		C31894041B6E475600248D20 /* map_01.png in Resources */ = {isa = PBXBuildFile; fileRef = C31893EA1B6E475600248D20 /* map_01.png */; };
+		C31894051B6E475600248D20 /* map_01_col.csv in Resources */ = {isa = PBXBuildFile; fileRef = C31893EB1B6E475600248D20 /* map_01_col.csv */; };
+		C31894061B6E475600248D20 /* map_02.csv in Resources */ = {isa = PBXBuildFile; fileRef = C31893EC1B6E475600248D20 /* map_02.csv */; };
+		C31894071B6E475600248D20 /* map_02_col.csv in Resources */ = {isa = PBXBuildFile; fileRef = C31893ED1B6E475600248D20 /* map_02_col.csv */; };
+		C31894081B6E475600248D20 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = C31893EE1B6E475600248D20 /* Thumbs.db */; };
+		C31894091B6E475600248D20 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893EF1B6E475600248D20 /* Player.cpp */; };
+		C318940A1B6E475600248D20 /* RandomItemSpawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893F11B6E475600248D20 /* RandomItemSpawner.cpp */; };
+		C318940C1B6E475600248D20 /* SpriteAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893F41B6E475600248D20 /* SpriteAnimator.cpp */; };
+		C318940D1B6E475600248D20 /* TextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893F61B6E475600248D20 /* TextureLoader.cpp */; };
+		C318940E1B6E475600248D20 /* cat_sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = C31893F91B6E475600248D20 /* cat_sprites.png */; };
+		C318940F1B6E475600248D20 /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = C31893FA1B6E475600248D20 /* fish.png */; };
+		C31894101B6E475600248D20 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = C31893FB1B6E475600248D20 /* Thumbs.db */; };
+		C31894121B6E475600248D20 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31893FD1B6E475600248D20 /* World.cpp */; };
+		C31894141B6E47DC00248D20 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31894131B6E47DC00248D20 /* main.cpp */; };
+		C33459B81B83498800545652 /* AI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33459B71B83498800545652 /* AI.cpp */; };
+		C3437B3E1B7BF2150064BBB8 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3437B3D1B7BF2150064BBB8 /* Button.cpp */; };
+		C36E467F1B715DBD0070AA78 /* MenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36E467D1B715DBD0070AA78 /* MenuState.cpp */; };
+		C36E46841B7164580070AA78 /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C36E46821B7164580070AA78 /* GameStateManager.cpp */; };
+		C370706B1B7F16040015AE9D /* PauseMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C370706A1B7F16040015AE9D /* PauseMenuState.cpp */; };
+		C3CE92011B700A2C00AE1394 /* Hud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CE91FF1B700A2C00AE1394 /* Hud.cpp */; };
+		C3CE92041B700BF900AE1394 /* cinnamon_cake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3CE92031B700BF900AE1394 /* cinnamon_cake.ttf */; };
+		C3CE92071B70174300AE1394 /* meow_happy.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3CE92061B70174300AE1394 /* meow_happy.wav */; };
+		C3CE920C1B702C1C00AE1394 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3CE920A1B702C1C00AE1394 /* GameState.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C36E46801B715F590070AA78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C31893C51B6E45F000248D20 /* The Meow Outing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Meow Outing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31893C91B6E45F000248D20 /* The Meow Outing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Meow Outing-Info.plist"; sourceTree = "<group>"; };
+		C31893CA1B6E45F000248D20 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		C31893CC1B6E45F000248D20 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		C31893DD1B6E475600248D20 /* AnimatableEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatableEntity.cpp; sourceTree = "<group>"; };
+		C31893DE1B6E475600248D20 /* AnimatableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatableEntity.h; sourceTree = "<group>"; };
+		C31893DF1B6E475600248D20 /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionDetector.cpp; sourceTree = "<group>"; };
+		C31893E01B6E475600248D20 /* CollisionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionDetector.h; sourceTree = "<group>"; };
+		C31893E11B6E475600248D20 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		C31893E21B6E475600248D20 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		C31893E31B6E475600248D20 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		C31893E41B6E475600248D20 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		C31893E51B6E475600248D20 /* Global_Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global_Enums.h; sourceTree = "<group>"; };
+		C31893E61B6E475600248D20 /* ICollidable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICollidable.h; sourceTree = "<group>"; };
+		C31893E71B6E475600248D20 /* IMovementObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMovementObserver.h; sourceTree = "<group>"; };
+		C31893E91B6E475600248D20 /* map_01.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_01.csv; sourceTree = "<group>"; };
+		C31893EA1B6E475600248D20 /* map_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_01.png; sourceTree = "<group>"; };
+		C31893EB1B6E475600248D20 /* map_01_col.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_01_col.csv; sourceTree = "<group>"; };
+		C31893EC1B6E475600248D20 /* map_02.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_02.csv; sourceTree = "<group>"; };
+		C31893ED1B6E475600248D20 /* map_02_col.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_02_col.csv; sourceTree = "<group>"; };
+		C31893EE1B6E475600248D20 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		C31893EF1B6E475600248D20 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		C31893F01B6E475600248D20 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C31893F11B6E475600248D20 /* RandomItemSpawner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomItemSpawner.cpp; sourceTree = "<group>"; };
+		C31893F21B6E475600248D20 /* RandomItemSpawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomItemSpawner.h; sourceTree = "<group>"; };
+		C31893F31B6E475600248D20 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		C31893F41B6E475600248D20 /* SpriteAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteAnimator.cpp; sourceTree = "<group>"; };
+		C31893F51B6E475600248D20 /* SpriteAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteAnimator.h; sourceTree = "<group>"; };
+		C31893F61B6E475600248D20 /* TextureLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureLoader.cpp; sourceTree = "<group>"; };
+		C31893F71B6E475600248D20 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		C31893F91B6E475600248D20 /* cat_sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_sprites.png; sourceTree = "<group>"; };
+		C31893FA1B6E475600248D20 /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
+		C31893FB1B6E475600248D20 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		C31893FC1B6E475600248D20 /* Todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo.txt; sourceTree = "<group>"; };
+		C31893FD1B6E475600248D20 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		C31893FE1B6E475600248D20 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		C31894131B6E47DC00248D20 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C33459B61B83441900545652 /* AI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AI.h; sourceTree = "<group>"; };
+		C33459B71B83498800545652 /* AI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AI.cpp; sourceTree = "<group>"; };
+		C3437B3B1B7BEC9E0064BBB8 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		C3437B3D1B7BF2150064BBB8 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		C36E467D1B715DBD0070AA78 /* MenuState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuState.cpp; sourceTree = "<group>"; };
+		C36E467E1B715DBD0070AA78 /* MenuState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuState.h; sourceTree = "<group>"; };
+		C36E46821B7164580070AA78 /* GameStateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStateManager.cpp; sourceTree = "<group>"; };
+		C36E46831B7164580070AA78 /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
+		C37070691B7F13540015AE9D /* PauseMenuState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuState.h; sourceTree = "<group>"; };
+		C370706A1B7F16040015AE9D /* PauseMenuState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenuState.cpp; sourceTree = "<group>"; };
+		C3CE91FF1B700A2C00AE1394 /* Hud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hud.cpp; sourceTree = "<group>"; };
+		C3CE92001B700A2C00AE1394 /* Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
+		C3CE92031B700BF900AE1394 /* cinnamon_cake.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinnamon_cake.ttf; sourceTree = "<group>"; };
+		C3CE92061B70174300AE1394 /* meow_happy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = meow_happy.wav; sourceTree = "<group>"; };
+		C3CE92081B70187300AE1394 /* ErrorCodes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ErrorCodes.txt; sourceTree = "<group>"; };
+		C3CE920A1B702C1C00AE1394 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		C3CE920B1B702C1C00AE1394 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C31893C11B6E45F000248D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C31893BB1B6E45F000248D20 = {
+			isa = PBXGroup;
+			children = (
+				C31893C71B6E45F000248D20 /* The Meow Outing */,
+				C31893C61B6E45F000248D20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C31893C61B6E45F000248D20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C31893C51B6E45F000248D20 /* The Meow Outing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C31893C71B6E45F000248D20 /* The Meow Outing */ = {
+			isa = PBXGroup;
+			children = (
+				C31893F31B6E475600248D20 /* Readme.txt */,
+				C31893FC1B6E475600248D20 /* Todo.txt */,
+				C3CE92081B70187300AE1394 /* ErrorCodes.txt */,
+				C31893E51B6E475600248D20 /* Global_Enums.h */,
+				C31894131B6E47DC00248D20 /* main.cpp */,
+				C31893DD1B6E475600248D20 /* AnimatableEntity.cpp */,
+				C31893DE1B6E475600248D20 /* AnimatableEntity.h */,
+				C31893DF1B6E475600248D20 /* CollisionDetector.cpp */,
+				C31893E01B6E475600248D20 /* CollisionDetector.h */,
+				C31893E11B6E475600248D20 /* Entity.cpp */,
+				C31893E21B6E475600248D20 /* Entity.h */,
+				C31893E31B6E475600248D20 /* Game.cpp */,
+				C31893E41B6E475600248D20 /* Game.h */,
+				C31893E61B6E475600248D20 /* ICollidable.h */,
+				C31893E71B6E475600248D20 /* IMovementObserver.h */,
+				C31893EF1B6E475600248D20 /* Player.cpp */,
+				C31893F01B6E475600248D20 /* Player.h */,
+				C31893F11B6E475600248D20 /* RandomItemSpawner.cpp */,
+				C31893F21B6E475600248D20 /* RandomItemSpawner.h */,
+				C31893F41B6E475600248D20 /* SpriteAnimator.cpp */,
+				C31893F51B6E475600248D20 /* SpriteAnimator.h */,
+				C31893F61B6E475600248D20 /* TextureLoader.cpp */,
+				C31893F71B6E475600248D20 /* TextureLoader.h */,
+				C31893FD1B6E475600248D20 /* World.cpp */,
+				C31893FE1B6E475600248D20 /* World.h */,
+				C3CE91FF1B700A2C00AE1394 /* Hud.cpp */,
+				C3CE92001B700A2C00AE1394 /* Hud.h */,
+				C36E46821B7164580070AA78 /* GameStateManager.cpp */,
+				C36E46831B7164580070AA78 /* GameStateManager.h */,
+				C3CE920A1B702C1C00AE1394 /* GameState.cpp */,
+				C3CE920B1B702C1C00AE1394 /* GameState.h */,
+				C36E467D1B715DBD0070AA78 /* MenuState.cpp */,
+				C36E467E1B715DBD0070AA78 /* MenuState.h */,
+				C3437B3B1B7BEC9E0064BBB8 /* Button.h */,
+				C3437B3D1B7BF2150064BBB8 /* Button.cpp */,
+				C33459B61B83441900545652 /* AI.h */,
+				C33459B71B83498800545652 /* AI.cpp */,
+				C31893CA1B6E45F000248D20 /* ResourcePath.mm */,
+				C31893CC1B6E45F000248D20 /* ResourcePath.hpp */,
+				C31893CF1B6E45F000248D20 /* Resources */,
+				C31893C81B6E45F000248D20 /* Supporting Files */,
+				C37070691B7F13540015AE9D /* PauseMenuState.h */,
+				C370706A1B7F16040015AE9D /* PauseMenuState.cpp */,
+			);
+			path = "The Meow Outing";
+			sourceTree = "<group>";
+		};
+		C31893C81B6E45F000248D20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C31893C91B6E45F000248D20 /* The Meow Outing-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C31893CF1B6E45F000248D20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE92051B70172F00AE1394 /* Sounds */,
+				C3CE92021B700BCC00AE1394 /* Fonts */,
+				C34B0F631B6E4BD5004BA46E /* Test */,
+				C31893E81B6E475600248D20 /* Maps */,
+				C31893F81B6E475600248D20 /* Textures */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C31893E81B6E475600248D20 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C31893E91B6E475600248D20 /* map_01.csv */,
+				C31893EA1B6E475600248D20 /* map_01.png */,
+				C31893EB1B6E475600248D20 /* map_01_col.csv */,
+				C31893EC1B6E475600248D20 /* map_02.csv */,
+				C31893ED1B6E475600248D20 /* map_02_col.csv */,
+				C31893EE1B6E475600248D20 /* Thumbs.db */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		C31893F81B6E475600248D20 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				C31893F91B6E475600248D20 /* cat_sprites.png */,
+				C31893FA1B6E475600248D20 /* fish.png */,
+				C31893FB1B6E475600248D20 /* Thumbs.db */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		C34B0F631B6E4BD5004BA46E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		C3CE92021B700BCC00AE1394 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE92031B700BF900AE1394 /* cinnamon_cake.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		C3CE92051B70172F00AE1394 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE92061B70174300AE1394 /* meow_happy.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C31893C41B6E45F000248D20 /* The Meow Outing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31893DA1B6E45F000248D20 /* Build configuration list for PBXNativeTarget "The Meow Outing" */;
+			buildPhases = (
+				C31893C01B6E45F000248D20 /* Sources */,
+				C31893C11B6E45F000248D20 /* Frameworks */,
+				C31893C21B6E45F000248D20 /* Resources */,
+				C31893C31B6E45F000248D20 /* ShellScript */,
+				C36E46801B715F590070AA78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Meow Outing";
+			productName = "The Meow Outing";
+			productReference = C31893C51B6E45F000248D20 /* The Meow Outing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C31893BC1B6E45F000248D20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Asad Ahmed";
+				TargetAttributes = {
+					C31893C41B6E45F000248D20 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = C31893BF1B6E45F000248D20 /* Build configuration list for PBXProject "The Meow Outing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C31893BB1B6E45F000248D20;
+			productRefGroup = C31893C61B6E45F000248D20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C31893C41B6E45F000248D20 /* The Meow Outing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C31893C21B6E45F000248D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C318940F1B6E475600248D20 /* fish.png in Resources */,
+				C31894031B6E475600248D20 /* map_01.csv in Resources */,
+				C31894051B6E475600248D20 /* map_01_col.csv in Resources */,
+				C31894061B6E475600248D20 /* map_02.csv in Resources */,
+				C31894071B6E475600248D20 /* map_02_col.csv in Resources */,
+				C318940E1B6E475600248D20 /* cat_sprites.png in Resources */,
+				C31894081B6E475600248D20 /* Thumbs.db in Resources */,
+				C31894101B6E475600248D20 /* Thumbs.db in Resources */,
+				C31894041B6E475600248D20 /* map_01.png in Resources */,
+				C3CE92071B70174300AE1394 /* meow_happy.wav in Resources */,
+				C3CE92041B700BF900AE1394 /* cinnamon_cake.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C31893C31B6E45F000248D20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C31893C01B6E45F000248D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C318940D1B6E475600248D20 /* TextureLoader.cpp in Sources */,
+				C31894001B6E475600248D20 /* CollisionDetector.cpp in Sources */,
+				C31894091B6E475600248D20 /* Player.cpp in Sources */,
+				C31893FF1B6E475600248D20 /* AnimatableEntity.cpp in Sources */,
+				C36E46841B7164580070AA78 /* GameStateManager.cpp in Sources */,
+				C31894141B6E47DC00248D20 /* main.cpp in Sources */,
+				C31894021B6E475600248D20 /* Game.cpp in Sources */,
+				C3437B3E1B7BF2150064BBB8 /* Button.cpp in Sources */,
+				C36E467F1B715DBD0070AA78 /* MenuState.cpp in Sources */,
+				C370706B1B7F16040015AE9D /* PauseMenuState.cpp in Sources */,
+				C31894121B6E475600248D20 /* World.cpp in Sources */,
+				C318940C1B6E475600248D20 /* SpriteAnimator.cpp in Sources */,
+				C31894011B6E475600248D20 /* Entity.cpp in Sources */,
+				C3CE920C1B702C1C00AE1394 /* GameState.cpp in Sources */,
+				C3CE92011B700A2C00AE1394 /* Hud.cpp in Sources */,
+				C318940A1B6E475600248D20 /* RandomItemSpawner.cpp in Sources */,
+				C31893CB1B6E45F000248D20 /* ResourcePath.mm in Sources */,
+				C33459B81B83498800545652 /* AI.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C31893D81B6E45F000248D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+					"~/Dev/include/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		C31893D91B6E45F000248D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+					"~/Dev/include/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		C31893DB1B6E45F000248D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "The Meow Outing/The Meow Outing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/asad/Downloads/SFGUI-0.3.0/bin/lib/Debug",
+					"/Users/asad/Downloads/SFGUI-0.3.0/bin/lib/Release",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C31893DC1B6E45F000248D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "The Meow Outing/The Meow Outing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/asad/Downloads/SFGUI-0.3.0/bin/lib/Debug",
+					"/Users/asad/Downloads/SFGUI-0.3.0/bin/lib/Release",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C31893BF1B6E45F000248D20 /* Build configuration list for PBXProject "The Meow Outing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31893D81B6E45F000248D20 /* Debug */,
+				C31893D91B6E45F000248D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31893DA1B6E45F000248D20 /* Build configuration list for PBXNativeTarget "The Meow Outing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31893DB1B6E45F000248D20 /* Debug */,
+				C31893DC1B6E45F000248D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C31893BC1B6E45F000248D20 /* Project object */;
+}
